@@ -1,0 +1,174 @@
+:root {
+  --font-size-multiplier: 1;
+  --accent-color: #b59333;
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --font-size-multiplier: 0.81; /*0.7;*/
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'MrsEavesRoman';
+  font-size: calc(22px * var(--font-size-multiplier));
+}
+
+.caps-subheader {
+  font-family: 'MrsEavesAllPetiteCaps';
+  font-size: calc(35px * var(--font-size-multiplier));
+  font-weight: 400;
+  line-height: 1.45rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.cursive {
+  font-weight: 400;
+  line-height: 1;
+  font-family: 'Faustine';
+}
+
+h3.cursive {
+  /* Was 48 before */
+  font-size: calc(72px * var(--font-size-multiplier));
+  /* margin-bottom: calc(24px * var(--font-size-multiplier)); */
+}
+
+h4 {
+  font-family: 'MrsEavesRoman';
+  font-size: calc(32px * var(--font-size-multiplier));
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+/* used on index image and event map */
+.shadow-frame {
+  padding: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+.section-container {
+  max-width: 960px;
+  padding: 2rem 1.0875rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.invert-section,
+.section:nth-child(even) .section-container {
+  background-color: #f2f2f2;
+}
+
+.invert-section:nth-child(even) .section-container {
+  background-color: transparent;
+}
+
+.invert-sections .section:nth-child(even),
+.invert-sections .section:nth-child(even) .section-container {
+  background-color: transparent;
+}
+
+.invert-sections .section:nth-child(odd),
+.invert-sections .section:nth-child(odd) .section-container {
+  background-color: #f2f2f2;
+}
+
+.section.force-transparent,
+.section.force-transparent .section-container {
+  background-color: transparent;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+.narrow-column {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.place {
+  margin-bottom: 2rem;
+}
+
+/* Used for manual transitions */
+.fade,
+.fade-fast {
+  opacity: 0;
+}
+
+.fade-active {
+  opacity: 1;
+}
+
+/* Used for React animation groups */
+.fade-enter,
+.fade-fast-enter {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-fast-enter-active {
+  opacity: 1;
+}
+.fade-exit,
+.fade-fast-exit {
+  opacity: 1;
+}
+.fade-exit-active,
+.fade-fast-exit-active {
+  opacity: 0;
+}
+
+.fade,
+.fade-enter-active,
+.fade-exit-active {
+  transition: opacity 500ms;
+}
+
+.fade-fast,
+.fade-fast-enter-active,
+.fade-fast-exit-active {
+  transition: opacity 200ms;
+}
+
+.submit-button {
+  font-family: MrsEavesAllPetiteCaps;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 55px 5px;
+  font-size: 28px;
+  border: 0px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%238C98F2'><polygon points='0,0 100,0 50,50'/></svg>")
+    no-repeat;
+  background-size: 12px;
+  background-position: right 0.8em top 60%;
+  background-repeat: no-repeat;
+}
+
+input[type='checkbox'].error {
+  outline: 1px solid #bd0015;
+}
+
+.link-button {
+  display: inline-block;
+  text-decoration: none;
+}

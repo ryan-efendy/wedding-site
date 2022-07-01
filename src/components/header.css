@@ -1,0 +1,28 @@
+.names,
+.and {
+  font-weight: 400;
+  line-height: 1;
+  font-family: 'Faustine';
+}
+
+.names {
+  font-size: calc(99px * var(--font-size-multiplier));
+  margin: 0;
+}
+
+.and {
+  font-size: calc(57px * var(--font-size-multiplier));
+  margin: calc(34px * var(--font-size-multiplier));
+  margin-bottom: calc(6px * var(--font-size-multiplier));
+}
+
+.inline .names,
+.inline .and {
+  display: inline;
+}
+
+@media only screen and (max-width: 600px) {
+  .header.inline {
+    margin-top: 60px;
+  }
+}

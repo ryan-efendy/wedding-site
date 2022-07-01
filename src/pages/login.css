@@ -1,0 +1,15 @@
+.password-field {
+  font-family: MrsEavesRoman;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  /* font-family: sans-serif; */
+  padding: 10px;
+  text-align: center;
+  /* color: #333; */
+  font-size: calc(35px * var(--font-size-multiplier));
+}
+
+.password-field::placeholder {
+  color: black;
+}
