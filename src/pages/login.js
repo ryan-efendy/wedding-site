@@ -3,9 +3,7 @@ import { navigate } from 'gatsby';
 import { SwitchTransition, CSSTransition } from 'react-transition-group';
 import './login.css';
 import Lottie from 'react-lottie';
-import animationData from './lf30_editor_6vOhkS.json';
-
-import { handleLogin } from '../services/auth';
+// import animationData from './lf30_editor_6vOhkS.json';
 import SEO from '../components/seo';
 import useInput from '../hooks/useInput';
 
@@ -34,11 +32,11 @@ const LoginPage = () => {
   const handleSubmit = event => {
     event.preventDefault();
 
-    const success = handleLogin({
-      password: password,
-    });
+    // const success = handleLogin({
+    //   password: password,
+    // });
 
-    setEnteredSuccessfully(success);
+    // setEnteredSuccessfully(success);
   };
 
   return (
@@ -59,7 +57,7 @@ const LoginPage = () => {
                 options={{
                   autoplay: true,
                   loop: false,
-                  animationData: animationData,
+                  // animationData: animationData,
                   rendererSettings: {
                     preserveAspectRatio: 'xMidYMid slice',
                   },

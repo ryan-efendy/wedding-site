@@ -1,13 +1,11 @@
 import React from 'react';
-
 import SEO from '../components/seo';
 
-import { withPrivateRoute } from '../components/privateRoute';
 
-const SafetyPage = () => {
+const FaqPage = () => {
   return (
     <>
-      <SEO title="Safety" />
+      <SEO title="Faq" />
       <div className="section">
         <div className="section-container">
           {/* <h3 className="cursive">COVID-19 Vaccines</h3> */}
@@ -15,7 +13,7 @@ const SafetyPage = () => {
             When is the RSVP deadline?
           </div>
           <p>
-            Please RSVP by October 17th so we can send you a physical invitation to follow-up &amp; have an accurate headcount.
+            Please RSVP by July 24th so we can send you a physical invitation to follow up &amp; share the final headcount with our venue.
           </p>
         </div>
       </div>
@@ -37,7 +35,7 @@ const SafetyPage = () => {
             Where should I park?
           </div>
           <p>
-          For the ceremony, there is plenty of free street parking around the church. For the reception at Sheraton, there is discounted self parking in their underground lot.
+          There's plenty of free street parking around the church for the ceremony. For the reception at Sheraton, there's discounted self-parking in their underground lot.
           </p>
         </div>
       </div>
@@ -70,7 +68,7 @@ const SafetyPage = () => {
             Is it okay to take pictures with our phones and cameras during the wedding?
           </div>
           <p>
-            We are hosting an #unplugged ceremony and ask that you kindly join us in putting devices away and let yourself be swept in the moment, and take it all in with the best dual camera there is-- your own eyeballs! During the reception, we invite everyone to take as many photos and videos as your storage space will permit. 
+          We are hosting an <i>#unplugged</i> ceremony and ask that you kindly join us in putting devices away and let yourself be swept at the moment. Take it all in with the best dual camera there is-- your own eyeballs! During the reception, we invite everyone to take as many photos and videos as your storage space will permit.
           </p>
         </div>
       </div>
@@ -81,7 +79,7 @@ const SafetyPage = () => {
             How will food and drinks be served?
           </div>
           <p>
-            A multi-course meal will be served during the reception. Drinks on the table! 
+          A 10-course meal will be served during the reception and there will be bottles on the table.
           </p>
         </div>
       </div>
@@ -100,4 +98,4 @@ const SafetyPage = () => {
   );
 };
 
-export default withPrivateRoute(SafetyPage);
+export default FaqPage;

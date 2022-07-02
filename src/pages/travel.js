@@ -1,24 +1,36 @@
 import React from 'react';
-
 import SEO from '../components/seo';
-import ComingSoon from '../components/comingSoon';
-
-import { withPrivateRoute } from '../components/privateRoute';
 
 const TravelPage = () => {
   return (
     <>
       <SEO title="Travel" />
       <div className="section-container narrow-column">
-        <h3 className="cursive">Hotels</h3>
-        <div className="caps-subheader accent">Reserved Room Blocks</div>
+        <h3 className="cursive">Getting In</h3>
+        {/* <div className="caps-subheader accent">Reserved Room Blocks</div> */}
+        <div className="caps-subheader accent">Transportation - Flights</div>
         <p>
-          For your convenience we’ve reserved blocks of rooms at two hotels.
-          Rates are available until July 27th or until blocks sell out.
+          We recommend flying into{' '}
+          <a
+            href="https://goo.gl/maps/QJsg5hqj7FvKa7126"
+            target="blank"
+            className="accent"
+          >
+            Burbank
+          </a>{' '}
+          (closer to our venue) or{' '}
+          <a
+            href="https://goo.gl/maps/Lejcs5zgbbPTAabn9"
+            target="blank"
+            className="accent"
+          >
+            LAX
+          </a>{' '}
+          (more flights/airlines)!
         </p>
-        <p>If booking via phone, mention Lowe/White Wedding.</p>
+        {/* <p>If booking via phone, mention Lowe/White Wedding.</p> */}
 
-        <div className="place">
+        {/* <div className="place">
           <h4>AC Hotel by Marriott San Jose</h4>
 
           <p>
@@ -35,8 +47,8 @@ const TravelPage = () => {
           >
             Book Online with Marriott
           </a>
-        </div>
-        <div className="place">
+        </div> */}
+        {/* <div className="place">
           <h4>Hyatt Place San Jose</h4>
           <p>
             9 minute walk to the venue
@@ -52,32 +64,48 @@ const TravelPage = () => {
           >
             Book Online with Hyatt
           </a>
-        </div>
+        </div> */}
       </div>
+
       <div className="section">
         <div className="section-container narrow-column">
-          <h3 className="cursive">Airport</h3>
+          <h3 className="cursive">Getting Around</h3>
           <div className="caps-subheader accent">
-            A hop, skip, and a jump away
+            Transportation - Rental Car
           </div>
-          <h4>Mineta San Jose International Airport</h4>
-
           <p>
-            Our venue is about 4 miles from Norman Y. Mineta San Jose
-            International Airport (SJC). Rideshare from the airport is about
-            $8-$20.
-          </p>
-          <p>
-            San Francisco International Airport (SFO) and Oakland International
-            Airport (OAK) are also options but are about 35 miles away.
+            LA is big, and getting around by car is highly recommended. Uber and
+            Lyft is readily available, otherwise using a car sharing platform
+            such as{' '}
+            <a href="https://turo.com/" target="blank" className="accent">
+              Turo
+            </a>{' '}
+            or{' '}
+            <a
+              href="https://www.getaround.com/"
+              target="blank"
+              className="accent"
+            >
+              Getaround
+            </a>{' '}
+            are super reasonable.
           </p>
         </div>
       </div>
+
       <div className="section">
+        <div className="section-container narrow-column">
+          <h3 className="cursive">Stay</h3>
+          <div className="caps-subheader accent">Reserved Room Blocks</div>
+          <h4>Coming soon!</h4>
+        </div>
+      </div>
+
+      {/* <div className="section">
         <div className="section-container narrow-column">
           <h3 className="cursive">Explore</h3>
           <div className="caps-subheader accent">
-            A Glimpse of Silicon Valley
+            Our Favorite Eats
           </div>
           <div className="place">
             <h4>Apple Park Visitor Center</h4>
@@ -134,12 +162,23 @@ const TravelPage = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
+
       <div className="section">
         <div className="section-container narrow-column">
           <h3 className="cursive">Eat</h3>
           <div className="caps-subheader accent">Our Favorite Eats</div>
-          <div className="place">
+          {/* <h4>Coming soon!</h4> */}
+          Click{' '}
+          <a
+            href="https://ryanefendy.notion.site/Christy-Ryan-Essential-LA-Food-Experiences-a7d889df1a1c48fea5460f9aaa4f2682"
+            target="blank"
+            className="accent"
+          >
+            here
+          </a>{' '}
+          for our ever growing list!
+          {/* <div className="place">
             <span>San Jose, CA</span>
             <h4>Falafel's Drive In</h4>
             <p>
@@ -209,11 +248,11 @@ const TravelPage = () => {
                 get directions
               </a>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
   );
 };
 
-export default withPrivateRoute(TravelPage);
+export default TravelPage;

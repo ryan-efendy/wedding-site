@@ -3,13 +3,12 @@ import { TransitionProvider, TransitionViews } from 'gatsby-plugin-transitions';
 import { SwitchTransition, CSSTransition } from 'react-transition-group';
 import Header from '../components/header';
 import NavBar from '../components/navbar';
-import { isLoggedIn } from '../services/auth';
 import '../fonts/fonts.css';
 import './layout.css';
 import './main.css';
 
 const Layout = ({ location, children }) => {
-  const isLogin = !isLoggedIn() || location.pathname.includes('login');
+  const isLogin = false
   const isHome = location.pathname === '/';
   const needsInlineHeader = !isLogin && !isHome;
 

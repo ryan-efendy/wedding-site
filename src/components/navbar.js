@@ -59,31 +59,31 @@ function Links({ onClick = () => {} }) {
           style={styles.link}
           activeStyle={styles.currentLink}
           partiallyActive={true}
-          to="/safety"
-          onClick={onClick}
-        >
-          Q &amp; A
-        </Link>
-      </li>
-      {/* <li style={styles.listItem}>
-        <Link
-          className="link"
-          style={styles.link}
-          activeStyle={styles.currentLink}
-          partiallyActive={true}
           to="/registry"
           onClick={onClick}
         >
           Registry
         </Link>
-      </li> */}
+      </li>
       <li style={styles.listItem}>
         <Link
           className="link"
           style={styles.link}
           activeStyle={styles.currentLink}
           partiallyActive={true}
-          to="/rsvp"
+          to="/faq"
+          onClick={onClick}
+        >
+          Q &amp; A
+        </Link>
+      </li>
+      <li style={styles.listItem}>
+        <Link
+          className="link"
+          style={styles.link}
+          activeStyle={styles.currentLink}
+          partiallyActive={true}
+          to="https://form.typeform.com/to/AqiBzIMt"
           onClick={onClick}
         >
           RSVP

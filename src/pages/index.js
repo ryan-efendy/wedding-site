@@ -1,15 +1,12 @@
 import React from 'react';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
-
 import SEO from '../components/seo';
-
-import { withPrivateRoute } from '../components/privateRoute';
 
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "proposal.jpg" }) {
+      image: file(relativePath: { eq: "christy-and-ryan.png" }) {
         childImageSharp {
           fluid(maxWidth: 960) {
             ...GatsbyImageSharpFluid
@@ -19,7 +16,7 @@ const Image = () => {
     }
   `);
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />;
+  return <Img fluid={data.image.childImageSharp.fluid} />;
 };
 
 const IndexPage = () => {
@@ -31,14 +28,13 @@ const IndexPage = () => {
           <h3 className="cursive">We're Getting Married!</h3>
           <div className="caps-subheader">11.12.22</div>
 
-          {/* <div className="shadow-frame"> */}
-            {/* <Image /> */}
-            {/* Engagement Coming soon! */}
-          {/* </div> */}
+          <div className="shadow-frame">
+            <Image />
+          </div>
         </div>
       </div>
     </>
   );
 };
 
-export default withPrivateRoute(IndexPage);
+export default IndexPage;

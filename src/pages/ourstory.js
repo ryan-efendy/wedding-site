@@ -1,14 +1,8 @@
-import React, { useCallback, useState } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
-import Carousel, { Modal, ModalGateway } from 'react-images';
-
+import React from 'react';
 import SEO from '../components/seo';
-import Gallery from 'react-photo-gallery';
 
-import { withPrivateRoute } from '../components/privateRoute';
 
-const MARGIN = 4;
+// const MARGIN = 4;
 
 // function GalleryImage({ index, left, top, key, photo, onClick }) {
 //   return (
@@ -31,115 +25,115 @@ const MARGIN = 4;
 //   );
 // }
 
-export const query = graphql`
-  fragment PhotoImage on File {
-    sourceInstanceName
-    childImageSharp {
-      preview: fluid(maxWidth: 300, quality: 100) {
-        ...GatsbyImageSharpFluid
-      }
-      fullscreen: fluid(maxWidth: 1000, quality: 100) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`;
+// export const query = graphql`
+//   fragment PhotoImage on File {
+//     sourceInstanceName
+//     childImageSharp {
+//       preview: fluid(maxWidth: 300, quality: 100) {
+//         ...GatsbyImageSharpFluid
+//       }
+//       fullscreen: fluid(maxWidth: 1000, quality: 100) {
+//         ...GatsbyImageSharpFluid
+//       }
+//     }
+//   }
+// `;
 
-function getPhotos(images) {
-  const previewPhotos = images.edges.map((edge) => {
-    const image = edge.node.childImageSharp.preview;
+// function getPhotos(images) {
+//   const previewPhotos = images.edges.map((edge) => {
+//     const image = edge.node.childImageSharp.preview;
 
-    return {
-      ...image,
-      width: image.aspectRatio,
-      height: 1,
-    };
-  });
+//     return {
+//       ...image,
+//       width: image.aspectRatio,
+//       height: 1,
+//     };
+//   });
 
-  const fullscreenPhotos = images.edges.map((edge) => {
-    const image = edge.node.childImageSharp.fullscreen;
+//   const fullscreenPhotos = images.edges.map((edge) => {
+//     const image = edge.node.childImageSharp.fullscreen;
 
-    return {
-      ...image,
-      width: image.aspectRatio,
-      height: 1,
-    };
-  });
+//     return {
+//       ...image,
+//       width: image.aspectRatio,
+//       height: 1,
+//     };
+//   });
 
-  return [previewPhotos, fullscreenPhotos];
-}
+//   return [previewPhotos, fullscreenPhotos];
+// }
 
 const GalleryPage = () => {
-  const data2 = useStaticQuery(graphql`
-    query {
-      engagement: allFile(
-        filter: { sourceInstanceName: { eq: "engagement" } }
-      ) {
-        edges {
-          node {
-            ...PhotoImage
-          }
-        }
-      }
+  // const data2 = useStaticQuery(graphql`
+  //   query {
+  //     engagement: allFile(
+  //       filter: { sourceInstanceName: { eq: "engagement" } }
+  //     ) {
+  //       edges {
+  //         node {
+  //           ...PhotoImage
+  //         }
+  //       }
+  //     }
 
-      engagement2: allFile(
-        filter: { sourceInstanceName: { eq: "engagement2" } }
-      ) {
-        edges {
-          node {
-            ...PhotoImage
-          }
-        }
-      }
+  //     engagement2: allFile(
+  //       filter: { sourceInstanceName: { eq: "engagement2" } }
+  //     ) {
+  //       edges {
+  //         node {
+  //           ...PhotoImage
+  //         }
+  //       }
+  //     }
 
-      travel: allFile(filter: { sourceInstanceName: { eq: "travel" } }) {
-        edges {
-          node {
-            ...PhotoImage
-          }
-        }
-      }
+  //     travel: allFile(filter: { sourceInstanceName: { eq: "travel" } }) {
+  //       edges {
+  //         node {
+  //           ...PhotoImage
+  //         }
+  //       }
+  //     }
 
-      howwemet: allFile(filter: { sourceInstanceName: { eq: "howwemet" } }) {
-        edges {
-          node {
-            ...PhotoImage
-          }
-        }
-      }
+  //     howwemet: allFile(filter: { sourceInstanceName: { eq: "howwemet" } }) {
+  //       edges {
+  //         node {
+  //           ...PhotoImage
+  //         }
+  //       }
+  //     }
 
-      vaccinated: allFile(
-        filter: { sourceInstanceName: { eq: "vaccinated" } }
-      ) {
-        edges {
-          node {
-            ...PhotoImage
-          }
-        }
-      }
-    }
-  `);
+  //     vaccinated: allFile(
+  //       filter: { sourceInstanceName: { eq: "vaccinated" } }
+  //     ) {
+  //       edges {
+  //         node {
+  //           ...PhotoImage
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
 
-  const [engagementPreviewPhotos, engagementFullscreenPhotos] = getPhotos(
-    data2.engagement
-  );
-  const [engagement2PreviewPhotos, engagement2FullscreenPhotos] = getPhotos(
-    data2.engagement2
-  );
-  const [travelPreviewPhotos, travelFullscreenPhotos] = getPhotos(data2.travel);
-  const [howwemetPreviewPhotos, howwemetFullscreenPhotos] = getPhotos(
-    data2.howwemet
-  );
+  // const [engagementPreviewPhotos, engagementFullscreenPhotos] = getPhotos(
+  //   data2.engagement
+  // );
+  // const [engagement2PreviewPhotos, engagement2FullscreenPhotos] = getPhotos(
+  //   data2.engagement2
+  // );
+  // const [travelPreviewPhotos, travelFullscreenPhotos] = getPhotos(data2.travel);
+  // const [howwemetPreviewPhotos, howwemetFullscreenPhotos] = getPhotos(
+  //   data2.howwemet
+  // );
 
-  const [vaccinatedPreviewPhotos, vaccinatedFullscreenPhotos] = getPhotos(
-    data2.vaccinated
-  );
+  // const [vaccinatedPreviewPhotos, vaccinatedFullscreenPhotos] = getPhotos(
+  //   data2.vaccinated
+  // );
 
-  const [currentImage, setCurrentImage] = useState(0);
-  const [fullscreenPhotos, setFullscreenPhotos] = useState(
-    engagement2FullscreenPhotos
-  );
-  const [viewerIsOpen, setViewerIsOpen] = useState(false);
+  // const [currentImage, setCurrentImage] = useState(0);
+  // const [fullscreenPhotos, setFullscreenPhotos] = useState(
+  //   engagement2FullscreenPhotos
+  // );
+  // const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
   // const openLightbox = useCallback((photos, event, { photo, index }) => {
   //   setFullscreenPhotos(photos);
@@ -295,12 +289,19 @@ const GalleryPage = () => {
             between Sasa and Stacy, right across the table from Ryan.
             <br />
             There,under the delicate lights of the ever-romantic, alluringly
-            named establishment called Tong Tak (doesn't that just sound so
-            dreamy) and the sweet intoxicating aroma of steamed fish, Ryan was
-            smitten. As Christy began gorging herself on the authentic Chinese
-            cuisine, Ryan was steadily chugging bottles of water and looking at
-            Reddit for a cheesy Christian pickup line (jk) to strike up a
-            conversation with Christy.
+            named establishment called{' '}
+            <a
+              href="https://goo.gl/maps/pn8xCG8QvG6RqcQx9"
+              target="blank"
+              className="accent"
+            >
+              Tong Tak
+            </a>{' '}
+            (doesn't that just sound so dreamy) and the sweet intoxicating aroma
+            of steamed fish, Ryan was smitten. As Christy began gorging herself
+            on the authentic Chinese cuisine, Ryan was steadily chugging bottles
+            of water and looking at Reddit for a cheesy Christian pickup line
+             to strike up a conversation with Christy.
           </p>
           {/* <Gallery
             photos={howwemetPreviewPhotos}
@@ -335,10 +336,10 @@ const GalleryPage = () => {
             Who made the first move? How?
           </div>
           <p>
-            Though nothing eventful happened the night (or weekend), we met,
+            Though nothing eventful happened the night (or weekend) we met,
             Ryan went into research mode. He found Christy’s Instagram a few
-            days later through another conference attendant (Johs K), who he
-            befriended (he’s resourceful like that). He slid into the DMs like
+            days later through another conference attendant he befriended named 
+            Josh (he’s resourceful like that). He slid into the DMs like
             only a classic, chivalrous Gen-Z could. Christy saw the message
             flash across her phone and began to mildly panic. Why was this guy
             messaging her? Why does he use so many emojis? Is it because he… God
@@ -393,4 +394,4 @@ const GalleryPage = () => {
   );
 };
 
-export default withPrivateRoute(GalleryPage);
+export default GalleryPage;

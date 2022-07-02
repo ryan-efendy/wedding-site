@@ -1,9 +1,9 @@
 {
-  "name": "hollyandeli",
+  "name": "ryanandchristy",
   "private": true,
-  "description": "Holly and Eli's wedding website",
+  "description": "Ryan and Christy's wedding website",
   "version": "0.1.0",
-  "author": "Eli White <github@eli-white.com>",
+  "author": "Ryan Efendy <heyryanefendy@gmail.com>",
   "dependencies": {
     "gatsby": "^4.17.2",
     "gatsby-image": "^3.11.0",
@@ -45,6 +45,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TheSavior/wedding-site"
+    "url": "https://github.com/ryan-efendy/wedding-site"
   }
 }
