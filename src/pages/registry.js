@@ -10,29 +10,84 @@ const RegistryPage = () => {
           <h3 className="cursive">Registry</h3>
           {/* <div className="caps-subheader accent">Zola Gift Registry</div> */}
           <p>
-          Your presence is enough of a present to us! But for those of you who wish to contribute to our future, we have a future fund that will help us begin our new life together. We sincerely appreciate your generosity and support!
+           The presence of our friends and family is the greatest gift of all!
+          </p>
+          <p>
+            However, if it's your wish to bless us with a gift, we would greatly
+            appreciate a contribution to our honeymoon/newlywed fund as we're
+            still praying for discernment as to where God wants us to live in
+            this new chapter of our lives.
+          </p>
+          <p>
+            <a
+              href="https://www.venmo.com/u/ryan-and-christy-newlywed-fund"
+              target="blank"
+              className="accent"
+            >
+              @ryan-and-christy-newlywed-fund
+            </a>{' '}
+            on Venmo
           </p>
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://withjoy.com/ryan-and-christy/registry"
+            href="https://venmo.com/ryan-and-christy-newlywed-fund?txn=pay&note=Congrats!&amount=1.00"
             className="submit-button"
             style={styles.viewRegistry}
           >
-            View Joy Registry
+            Send Gift on Venmo
           </a>
           <br />
           <br />
           <br />
+          <p>
+            <a
+              href="https://cash.app/$ryanchristyhoneymoon"
+              target="blank"
+              className="accent"
+            >
+              $ryanchristyhoneymoon
+            </a>{' '}
+            on CashApp
+          </p>
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.amazon.com/wedding/share/ryanandchristy111222"
+            href="https://cash.app/$ryanchristyhoneymoon"
             className="submit-button"
             style={styles.viewRegistry}
           >
-            View Amazon Registry
+            Send Gift on Cash App
           </a>
+          <br />
+          <br />
+          <br />
+          <p>
+            <a
+              href="https://paypal.me/ryanchristyhoneymoon"
+              target="blank"
+              className="accent"
+            >
+              @ryanchristyhoneymoon
+            </a>{' '}
+            on PayPal
+          </p>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://paypal.me/ryanchristyhoneymoon"
+            className="submit-button"
+            style={styles.viewRegistry}
+          >
+            Send Gift on PayPal
+          </a>
+          <br />
+          <br />
+          <br />
+          <p>
+            <span className="accent">+12673073323</span> or{' '}
+            <span className="accent">+16262837700</span> on Zelle
+          </p>
         </div>
       </div>
     </>
