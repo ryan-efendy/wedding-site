@@ -6,7 +6,7 @@ import SEO from '../components/seo';
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "christy-and-ryan.png" }) {
+      image: file(relativePath: { eq: "christy-and-ryan.webp" }) {
         childImageSharp {
           fluid(maxWidth: 960) {
             ...GatsbyImageSharpFluid
