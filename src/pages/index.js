@@ -22,7 +22,7 @@ const Image = () => {
 const IndexPage = () => {
   return (
     <>
-      <SEO title="We're getting married! And we'd love you to come to celebrate with us!" />
+      <SEO title="Omg 🙈 these kids are getting married!" />
       <div className="section">
         <div className="section-container">
           <h3 className="cursive">We're Getting Married!</h3>
