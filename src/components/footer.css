@@ -1,0 +1,13 @@
+.footer {
+  font-weight: 400;
+  line-height: 1;
+  font-family: 'Faustine';
+  font-size: calc(45px * var(--font-size-multiplier));
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer.inline {
+    margin-top: 60px;
+  }
+}

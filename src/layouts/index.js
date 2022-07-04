@@ -2,13 +2,14 @@ import React from 'react';
 import { TransitionProvider, TransitionViews } from 'gatsby-plugin-transitions';
 import { SwitchTransition, CSSTransition } from 'react-transition-group';
 import Header from '../components/header';
+import Footer from '../components/footer';
 import NavBar from '../components/navbar';
 import '../fonts/fonts.css';
 import './layout.css';
 import './main.css';
 
 const Layout = ({ location, children }) => {
-  const isLogin = false
+  const isLogin = false;
   const isHome = location.pathname === '/';
   const needsInlineHeader = !isLogin && !isHome;
 
@@ -58,6 +59,7 @@ const Layout = ({ location, children }) => {
           </>
         </CSSTransition>
       </SwitchTransition>
+      <Footer />
     </>
   );
 };

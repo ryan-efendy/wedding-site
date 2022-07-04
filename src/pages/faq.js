@@ -13,7 +13,7 @@ const FaqPage = () => {
             When is the RSVP deadline?
           </div>
           <p>
-            Please RSVP by July 24th so we can send you a physical invitation to follow up &amp; share the final headcount with our venue.
+            Please RSVP by July 24th so we can send you a physical invitation to follow up &amp; submit the final headcount to our venue.
           </p>
         </div>
       </div>
@@ -24,7 +24,7 @@ const FaqPage = () => {
             Can I bring a date?
           </div>
           <p>
-            All guests have been accounted for already.
+            Please see your invite for your +1!
           </p>
         </div>
       </div>
