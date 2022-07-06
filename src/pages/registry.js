@@ -10,13 +10,13 @@ const RegistryPage = () => {
           <h3 className="cursive">Registry</h3>
           {/* <div className="caps-subheader accent">Zola Gift Registry</div> */}
           <p>
-           The presence of our friends and family is the greatest gift of all!
+            The presence of our friends and family is the greatest gift of all!
           </p>
           <p>
             However, if it's your wish to bless us with a gift, we would greatly
             appreciate a contribution to our honeymoon/newlywed fund as we're
-            still praying for discernment as to where God wants us to live in
-            this new chapter of our lives.
+            still praying for discernment as to where God wants us to live and
+            minister in this new chapter of our lives.
           </p>
           <p>
             <a
@@ -37,7 +37,7 @@ const RegistryPage = () => {
           >
             Send Gift on Venmo
           </a>
-          <br />
+          {/* <br />
           <br />
           <br />
           <p>
@@ -87,7 +87,10 @@ const RegistryPage = () => {
           <p>
             <span className="accent">+12673073323</span> or{' '}
             <span className="accent">+16262837700</span> on Zelle
-          </p>
+          </p> */}
+          <br />
+          <br />
+          <br />
         </div>
       </div>
     </>

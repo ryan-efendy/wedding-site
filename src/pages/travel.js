@@ -103,19 +103,33 @@ const TravelPage = () => {
 
       <div className="section">
         <div className="section-container narrow-column">
-          <h3 className="cursive">Eat</h3>
-          <div className="caps-subheader accent">Our Favorite Eats</div>
-          <h4>Coming soon!</h4>
+          <h3 className="cursive">Eat &amp; Explore</h3>
+          <div className="caps-subheader accent">
+            Our Favorite Eats &amp; Places
+          </div>
+          {/* <h4>Coming soon!</h4> */}
+          Click{' '}
+          <a
+            href="https://ryanefendy.notion.site/Christy-Ryan-Essential-LA-Food-Experiences-a7d889df1a1c48fea5460f9aaa4f2682"
+            target="blank"
+            className="accent"
+          >
+            here
+          </a>{' '}
+          for our ever growing list!
         </div>
       </div>
 
-      <div className="section">
+      {/* <div className="section">
         <div className="section-container narrow-column">
           <h3 className="cursive">Explore</h3>
           <div className="caps-subheader accent">Our Favorite Places</div>
           <h4>Coming soon!</h4>
         </div>
-      </div>
+      </div> */}
+
+      <br />
+      <br />
     </>
   );
 };

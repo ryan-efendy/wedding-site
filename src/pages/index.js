@@ -33,6 +33,7 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
+      <br />
     </>
   );
 };

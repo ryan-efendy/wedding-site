@@ -11,7 +11,14 @@ const Footer = () => (
   >
     <div>
       <h1 className="footer">
-        © {new Date().getFullYear()}, Built with ❤️ by Ryan &amp; Christy
+        Built with ❤️ by Ryan &amp; Christy 👉 {' '}
+          <a
+            href="https://www.bible.com/bible/59/1JN.4.19.ESV"
+            target="blank"
+            className="accent"
+          >
+            1 John 4:19
+          </a>{' '}
       </h1>
     </div>
   </footer>

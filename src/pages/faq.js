@@ -94,6 +94,7 @@ const FaqPage = () => {
           </p>
         </div>
       </div> */}
+      <br />
     </>
   );
 };

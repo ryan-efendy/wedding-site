@@ -19,7 +19,7 @@ const WeddingPage = () => {
               147 W Palm Ave, Monrovia, CA 91016
             </a>
           </p>
-          <div className="caps-subheader accent">When: 2:30 pm</div>
+          <div className="caps-subheader accent">When: 3:00 pm</div>
           <p>
             Our ceremony will be held at our church. There's plenty of free
             street parking around the church.
@@ -46,7 +46,7 @@ const WeddingPage = () => {
           <div className="caps-subheader accent">When: 5:00 pm</div>
           <p>
             The reception will be held at the Sheraton (separate location from
-            the ceremony). Dinner and party to follow! There's subsidized
+            the ceremony). Dinner and party to follow! There's discounted
             self-parking in Sheraton's underground lot.
           </p>
         </div>
@@ -59,6 +59,7 @@ const WeddingPage = () => {
           <p></p>
         </div>
       </div>
+      <br />
     </>
   );
 };
