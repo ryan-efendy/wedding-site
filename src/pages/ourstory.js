@@ -279,12 +279,15 @@ const GalleryPage = () => {
             On a Friday night in October 2019, Christy was making the rush hour trek to Arcadia to attend the dinner portion of a leadership conference. She was low-                        key dreading it during the hour-long drive as her sister Charissa and friend Stacy had been teasing in a group chat that many Jesus-loving male singles from around the country were in attendance at this conference, which has since proven to essentially be a real-life "Christian Mingle."
             <br />
             •••
+            <br />
             Ryan had been enjoying his two days in LA as one of the members of his Seattle home church invited to be equipped during a weekend leadership conference.             He was reveling among his  friends at a very Chinese restaurant when he saw - * gasp * - a girl “making an entrance” into the noisy restaurant and walking toward him.
             <br />
             •••
+            <br />
             Christy rolled up to dinner late and plopped down at the saved seat between Sasa and Stacy, right across the table from Ryan.
             <br />
             •••
+            <br />
             There,under the delicate lights of the ever-romantic, alluringly
             named establishment called{' '}
             <a
