@@ -10,7 +10,7 @@ const GalleryPage = () => {
           <h3 className="cursive">Our Story</h3>
           <div className="caps-subheader accent">How We Met</div>
           <p>
-            On a Friday night in October 2019, Christy was making the rush hour trek to Arcadia to attend the dinner portion of a leadership conference. She was low-                        key dreading it during the hour-long drive as her sister Charissa and friend Stacy had been teasing in a group chat that many Jesus-loving male singles from around the country were in attendance at this conference, which has since proven to essentially be a real-life "Christian Mingle."
+            On a Friday night in October 2019, Christy was making the rush hour trek to Arcadia to attend the dinner portion of a leadership conference. She was low-key dreading it during the hour-long drive as her sister Charissa and friend Stacy had been teasing in a group chat that many Jesus-loving male singles from around the country were in attendance at this conference, which has since proven to essentially be a real-life "Christian Mingle."
             <br />
             •••
             <br />
@@ -22,7 +22,7 @@ const GalleryPage = () => {
             <br />
             •••
             <br />
-            There,under the delicate lights of the ever-romantic, alluringly
+            There, under the delicate lights of the ever-romantic, alluringly
             named establishment called{' '}
             <a
               href="https://goo.gl/maps/pn8xCG8QvG6RqcQx9"
@@ -34,7 +34,7 @@ const GalleryPage = () => {
             (doesn't that just sound so dreamy) and the sweet intoxicating aroma
             of steamed fish, Ryan was smitten. As Christy began gorging herself
             on the authentic Chinese cuisine, Ryan was steadily chugging bottles
-            of water and looking at Reddit for a cheesy Christian pickup line
+            of water and looking through Reddit for a cheesy Christian pickup line
             to strike up a conversation.
           </p>
         </div>
@@ -49,7 +49,7 @@ const GalleryPage = () => {
             Though nothing eventful happened when we met,
             Ryan proceeded into research mode. He found Christy’s Instagram a few
             days later through another conference attendant he befriended named
-            Josh (he’s resourceful like that). He slid into the DMs like
+            Josh (he’s resourceful like that). He then slid into the DMs like
             only a classic, chivalrous Gen-Z could.
             <br />
             Christy saw the message flash across her phone and began to mildly panic. Why would this guy
