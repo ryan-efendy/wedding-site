@@ -32,6 +32,17 @@ const FaqPage = () => {
       <div className="section">
         <div className="section-container">
           <div className="caps-subheader accent">
+            Are kids welcome?
+          </div>
+          <p>
+            To allow all guests to relax and enjoy themselves, we have chosen to make our special day adults only. We thank you for your understanding.
+          </p>
+        </div>
+      </div>
+
+      <div className="section">
+        <div className="section-container">
+          <div className="caps-subheader accent">
             Where should I park?
           </div>
           <p>
